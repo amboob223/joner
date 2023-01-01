@@ -1,0 +1,44 @@
+.main {
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+}
+
+body {
+    background-color: blue;
+}
+
+.jone {
+    display: flex;
+    justify-content: center;
+}
+
+.result {
+    font-size: xx-large;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+.op {
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    position: inherit;
+}
+
+.container select {
+    width: 200px;
+}
+
+.container select:hover {
+    cursor: pointer;
+}
+
+button {
+    margin: 2%;
+}

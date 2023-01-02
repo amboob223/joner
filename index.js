@@ -1,4 +1,3 @@
-// okay now we need to return the value when it been selected and we use an click event to do so
 const jone = { //  may be
     nose: {
         fat: ["plump", "juicy", "pumpkin", "blubber", "muffin", "gorrila", "egg", "hammer", "basket", "cucumbuer", "swollen thumb"],
@@ -8,11 +7,11 @@ const jone = { //  may be
     head: {
         fat: ["peanut", "macbook", "boonkey", "football", "bottle", "sandwhich", "monkey"],
         slim: ["hot dawg", "dagger", "choppa", "tube", "soundbar", "stapler"],
-        small: ["peach", "bean", "ice chip", "button", "beetlejuice tiny ugly head "]
+        small: ["peach", "bean", "ice chip", "button", "beetlejuice tiny ugly"]
     },
     body: {
-        fat: ["big", "hamburger and cheese", "fudge round body", "fat", "slopy", "jabba the hut lookin",],
-        slim: ["line body", "I need a dollar lookin", "ethiopian commerical back in the day lookin", "refugee", "stick body"],
+        fat: ["truck", "hamburger and cheese", "fudge round", "bowl of fat", "slopy joe", "jabba the hut",],
+        slim: ["line body", "I need a dollar lookin", "ethiopian commerical back in the day", "refugee", "stick body"],
         small: ["baby", "lil bitty", "jitbody", "roach lookin", "southpark shawty body"]
     }
 }//we user an object because the body part keys will be uniue and the values will be arrays we can indexi nto with the random number
@@ -23,7 +22,7 @@ const button = document.querySelector(".btn")
 const nose = document.getElementById("nose")
 const body = document.getElementById("body")
 const head = document.getElementById("head")
-const container = document.querySelector(".jone")
+const container = document.querySelector(".jcontain")
 
 
 const dome = head.value // this values is a property of the option that siin the select the head element
@@ -71,12 +70,19 @@ button.addEventListener("click", () => {
 
     place = document.createElement("p")
     place.classList.add("result")
-    place.innerHTML = "yo gat dammm " + `${randomWord} ` + `${randomKey} ` + " ahh"
+
+    const sentences = ["Yo gat dammm " + `${randomWord} ` + `${randomKey} ` + " ahh! ", "Ole gat damm " + `${randomWord} ` + `${randomKey}` + " ahh! ", "Dats why yo " + `${randomKey} ` + " built like a " + `${randomWord}!`]
+
+    place.innerHTML = [sentences[randnum]]
+
+
     console.log(place)
 
     container.appendChild(place)
 
-    // console.log(randomKey)
+    // console.log(randomar)
+    // console.log(choice)
+    // console.log(target)
 
 
 
@@ -88,3 +94,20 @@ button.addEventListener("click", () => {
 
    //we need it to randomly pick what part its going to jone and 
     // the diffrence between click and onclick
+
+    //o add a favicon to a JavaScript project without using React, you will need to do the following:
+
+// Create a favicon.ico file. You can use an online favicon generator or create your own using an image editor.
+
+// Place the favicon.ico file in the root directory of your project.
+
+// Add a link element in the head of your HTML file pointing to the favicon.ico file. The link element should look something like this:
+
+// Copy code
+// <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+// That's it! When you load your project in a browser, the favicon should appear in the browser tab.
+
+// If you want to use a different file type for your favicon (such as a PNG), you can use the "type" attribute to specify the file type and the "href" attribute to specify the location of the favicon file.
+
+// Copy code
+// <link rel="shortcut icon" type="image/png" href="/favicon.png">

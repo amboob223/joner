@@ -48,6 +48,10 @@ body {
 .opc {
     display: flex;
     justify-content: center;
+    text-align: center;
+    justify-items: center;
+    justify-self: center;
+
 }
 
 
@@ -59,6 +63,8 @@ body {
     margin: 5%;
     width: max-content;
     position: relative;
+    text-align: center;
+
 }
 
 .op select {
